@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Image Filter animation</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+        /* General styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #090909;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+
+        /* General styles end */
+        .circle {
+            animation: rotateHue 2s alternate infinite;
+        }
+
+        @keyframes rotateHue {
+            to {
+                filter: hue-rotate(1turn);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <img src="./circle.png" alt="" class="circle">
+</body>
+
+</html>
